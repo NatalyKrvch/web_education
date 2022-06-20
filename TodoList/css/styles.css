@@ -1,52 +1,47 @@
-html, body{
-  height:100%;
-  width: 100%;
-  background-image: linear-gradient(#66e5ce, #4b81e5);
-}
-
-.backgroundDiv {
+html,
+body {
   height: 100%;
   width: 100%;
-  display:grid; 
-  place-items:center;
+  margin: 0px;
 }
 
-.mainDiv {
+body {
+  background-image: linear-gradient(#66e5ce, #4b81e5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-div {
   border-style: hidden;
   border-radius: 5px;
   background-color: #fdfffe;
   height: 350px;
-  width: 350px;  
+  width: 350px;
 }
 
 h1 {
   margin-left: 20px;
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(67, 67, 67);
-    
 }
 
 .table-block {
   display: flex;
   width: 100%;
   margin: 0px;
-  padding: 0px;  
+  padding: 0px;
 }
 
 .table-text-wrapper {
-  display: table-cell;
   width: 100%;
-  padding-right: 5px;
-  padding-left: 20px;
-  padding-bottom: 0px;
-  margin-bottom: 0px;  
+  padding: 0px 5px 0px 20px;
+  margin-bottom: 0px;
 }
 
 .text {
   width: 100%;
-  padding-left: 8px;
-  padding-top: 17px;
-  padding-bottom: 17px;
+  padding: 17px 0px 17px 8px;
   line-height: 30px;
   height: 30px;
   border-radius: 5px;
@@ -56,13 +51,13 @@ h1 {
   font-size: 16px;
 }
 
-.addButton {
+.add-button {
   background-color: #8e4be9;
   border: none;
   border-radius: 3px;
   color: white;
   cursor: pointer;
-  padding: 2px 12px 0px 12px; 
+  padding: 2px 12px 0px 12px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -73,8 +68,13 @@ h1 {
   transition-duration: 0.4s;
 }
 
-.addButton:hover {
+.add-button:hover {
   background-color: #5c2ba0;
+}
+
+.add-button-image {
+  height: 12px;
+  width: 12px;
 }
 
 .container {
@@ -92,7 +92,12 @@ h1 {
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(67, 67, 67);
   margin: 3px 20px 3px 20px;
-  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.trash-button-image {
+  opacity: 1;
 }
 
 .footer {
@@ -104,11 +109,11 @@ h1 {
   color: rgb(67, 67, 67);
 }
 
-.clearButtonDiv {
- margin-right: 20px;
+.clear-button-div {
+  margin-right: 20px;
 }
 
-.clearButton {
+.clear-button {
   border: none;
   border-radius: 3px;
   background-color: #8e4be9;
@@ -118,21 +123,29 @@ h1 {
   font-weight: bold;
 }
 
-.clearButton:hover {
+.clear-button:hover {
   background-color: #5c2ba0;
 }
 
-.trashButton {
-  background-color: #e94b3f;
-  border: none;
-  border-radius: 3px;
-}
-
-.hiddenButtonDiv {
+.hidden-button-div {
   position: absolute;
   display: none;
 }
 
-.item:hover .hiddenButtonDiv{
-  display: block;
+.delete-action {
+  visibility: hidden;
+  opacity: 0;
+  width: 36px;
+  border-radius: 3px;
+  background-color: #e94b3f;
+  transition: 0.35s opacity, 0.35s visibility;
+}
+
+.item:hover .delete-action {
+  opacity: 1;
+  visibility: visible;
+}
+
+.label {
+  padding: 8px;
 }

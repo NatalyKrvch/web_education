@@ -1,35 +1,61 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <title>Todo App</title>
 </head>
+
 <body>
-   <div class="backgroundDiv">
-     <div class="mainDiv">
+    <div class="main-div">
         <h1>Todo App</h1>
         <div class="table-block">
             <div class="table-text-wrapper">
-                <input class="text table-text" type="text" placeholder="Add your new todo"/>
+                <input class="text" type="text" placeholder="Add your new todo" />
             </div>
-            <button class="addButton" type="button"><img src="images/plus.png" height="12px" width="12px" alt="Add"></button>          
+            <button class="add-button" type="button"><img class="add-button-image" src="images/plus.png"
+                    alt="Add"></button>
         </div>
 
         <div class="container">
-                <div class="item">Buy a new gaming laptop</div>
-                <div class="hiddenButtonDiv"><button class="trashButton"><img src="images/trash.png" alt=""></button></div>
-                <div class="item">Complete a previous task</div>
-                <div class="item">Create video for YouTube</div>
-                <div class="item">Create a new portfolio site</div>
+            <div class="item">
+                <div class="label">Buy a new gaming laptop</div>
+                <div class="delete-action"></div>
+            </div>
+            <div class="hidden-button-div"><button class="trash-button"><img class="trash-button-image" src="images/trash.png"
+                        alt="Delete"></button>
+            </div>
+            <div class="item">
+                <div class="label">Complete a previous task</div>
+                <div class="delete-action"></div>
+            </div>
+            <div class="hidden-button-div"><button class="trash-button"><img src="images/trash.png"
+                        alt="Delete"></button>
+            </div>
+            <div class="item">
+                <div class="label">Create video for YouTube</div>
+                <div class="delete-action"></div>
+            </div>
+            <div class="hidden-button-div"><button class="trash-button"><img src="images/trash.png"
+                        alt="Delete"></button>
+            </div>
+            <div class="item">
+                <div class="label">Create a new portfolio site</div>
+                <div class="delete-action"></div>
+                <div class="hidden-button-div"><button class="trash-button"><img src="images/trash.png"
+                            alt="Delete"></button>
+                </div>
+            </div>
         </div>
         <div class="footer">
             <div class="counter">You have 4 pending tasks</div>
-            <div class="clearButtonDiv"><button class="clearButton" type="button">Clear All</button></div>
+            <div class="clear-button-div"><button class="clear-button" type="button">Clear All</button></div>
         </div>
-     </div>
-   </div>
+    </div>
+    </div>
 </body>
+
 </html>
