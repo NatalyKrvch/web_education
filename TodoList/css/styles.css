@@ -1,0 +1,157 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+}
+
+body {
+  background-image: linear-gradient(#66e5ce, #4b81e5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-div {
+  border-style: hidden;
+  border-radius: 5px;
+  background-color: #fdfffe;
+  height: 350px;
+  width: 350px;
+}
+
+h1 {
+  margin-left: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(67, 67, 67);
+}
+
+.table-block {
+  display: flex;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.table-text-wrapper {
+  width: 100%;
+  padding: 0px 5px 0px 20px;
+  margin-bottom: 0px;
+}
+
+.text {
+  width: 100%;
+  padding: 17px 0px 17px 8px;
+  line-height: 30px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #cbcbcb;
+  box-sizing: border-box;
+  margin-bottom: 0px;
+  font-size: 16px;
+}
+
+.add-button {
+  background-color: #8e4be9;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  padding: 2px 12px 0px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin-right: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  transition-duration: 0.4s;
+}
+
+.add-button:hover {
+  background-color: #5c2ba0;
+}
+
+.add-button-image {
+  height: 12px;
+  width: 12px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.item {
+  position: relative;
+  border: none;
+  border-radius: 3px;
+  background-color: #f3f1f2;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(67, 67, 67);
+  margin: 3px 20px 3px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 20px;
+  margin-top: 20px;
+  color: rgb(67, 67, 67);
+}
+
+.clear-button-div {
+  margin-right: 20px;
+}
+
+.clear-button {
+  border: none;
+  border-radius: 3px;
+  background-color: #8e4be9;
+  color: #fdfffe;
+  padding: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.clear-button:hover {
+  background-color: #5c2ba0;
+}
+
+.hidden-button-div {
+  position: absolute;
+  display: none;
+}
+
+.delete-action {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.35s opacity, 0.35s visibility;
+}
+
+.item:hover .delete-action {
+  opacity: 1;
+  visibility: visible;
+}
+
+.label {
+  padding: 8px;
+}
+
+.trash-button {
+  background-color: #e94b3f;
+  border: 0px;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 8px 3px 6px;
+}
+
+.trash-button-image {
+  height: 70%;
+  width: 60%;
+}
