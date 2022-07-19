@@ -1,16 +1,17 @@
 "use strict"
 
-const ob = [{name: "vasya"}, {name: "oleg"}, {name: "petya"}, {name: "kostya"}, {name: "olena"}];
+const ob = [{ name: "vasya" }, { name: "oleg" }, { name: "petya" }, { name: "kostya" }, { name: "olena" }];
+
+function capitalizeFirstLetter(string) {
+	return string.charAt(0).toUpperCase() + string.slice(1);
+}
 
 for (let i = 0; i < ob.length; i++) {
-	let beg = ob[i].name.slice(0,1);
-	beg = beg.toUpperCase();
-	let end = ob[i].name.slice(1,name.length);
-	let upperWord = beg + end;
-	if (upperWord == "Oleg") {
+	let upperWord = capitalizeFirstLetter(ob[i].name);
+	if (upperWord === "Oleg") {
 		continue;
 	}
-	if (upperWord == "Kostya") {
+	if (upperWord === "Kostya") {
 		console.log(upperWord);
 		break;
 	}
