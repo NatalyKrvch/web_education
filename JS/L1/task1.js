@@ -9,7 +9,7 @@ let number2 = prompt("Enter second number");
 number1 = Number(number1);
 number2 = Number(number2);
 
-if (!number1 || !number2) {
+if (isNaN(number1) || isNaN(number2)) {
     console.log("Error. Not a number");
 } else {
 
@@ -23,15 +23,12 @@ if (!number1 || !number2) {
                 break;
             case "/": return number1 / number2;
                 break;
+            default: console.log("Error. Invalid operation");
+                break;
 
         }
 
     }
-
-    if (op != "+" && op != "-" && op != "/" && op != "*") {
-        console.log("Error. Invalid operation");
-    } else {
-        console.log(calc(op, number1, number2));
-    }
+    console.log(calc(op, number1, number2));
 
 }
